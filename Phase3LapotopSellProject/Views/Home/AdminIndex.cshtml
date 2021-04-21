@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Models.LaptopModel>
+
+@{
+    ViewData["Title"] = "Admin Index";
+}
+
+
+
+
+<h1>Laptops</h1>
+<hr />
+<br />
+<div class="container-fluid">
+    <div>
+        <a asp-action="Create" class="text-right">Add New Item</a>
+        <br />
+        <br />
+    </div>
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src=" @Html.DisplayFor(modelItem => item.Img_Url)" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"> @Html.DisplayFor(modelItem => item.Product_Name)</h5>
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.Description)</p>
+                        <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-outline-primary btn-lg btn-block">Get Details</a>
+                        <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-outline-primary btn-lg btn-block">Edit Details</a>
+                        <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-outline-danger btn-lg btn-block">Delete</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

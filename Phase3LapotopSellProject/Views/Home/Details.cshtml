@@ -1,0 +1,47 @@
+﻿@model Models.LaptopModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div class="container">
+
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <img src="@Html.DisplayFor(model => model.Img_Url)" class="img-fluid img-thumbnail" alt="Responsive image">
+        </div>
+        <div class="col-md-8">
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Product_Name) -
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Product_Name)
+                </dd>
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Price) -
+                </dt>
+                <dd class="col-sm-9">
+                    RS.@Html.DisplayFor(model => model.Price)/-
+                </dd>
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.Description) -
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+    <br />
+    <a asp-controller="Order" asp-action="Create" asp-route-id="@Model.ID" class="btn btn-outline-primary btn-lg btn-block">Order Now</a>
+</div>
+<br />
+<div>
+    
+    <a asp-action="Index">Back to List</a>
+</div>
