@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phase3LapotopSellProject", "Phase3LapotopSellProject\Phase3LapotopSellProject.csproj", "{152C19E8-720C-492C-90DC-E4A37E3C937B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phase3LapotopSellProject", "Phase3LapotopSellProject\Phase3LapotopSellProject.csproj", "{152C19E8-720C-492C-90DC-E4A37E3C937B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{BBDAFB36-0B31-44E1-B7AE-4BFB01A1777F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{C22C374B-4ACB-48BC-A941-AC6A7726B69F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{152C19E8-720C-492C-90DC-E4A37E3C937B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{152C19E8-720C-492C-90DC-E4A37E3C937B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{152C19E8-720C-492C-90DC-E4A37E3C937B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBDAFB36-0B31-44E1-B7AE-4BFB01A1777F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBDAFB36-0B31-44E1-B7AE-4BFB01A1777F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBDAFB36-0B31-44E1-B7AE-4BFB01A1777F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBDAFB36-0B31-44E1-B7AE-4BFB01A1777F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22C374B-4ACB-48BC-A941-AC6A7726B69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22C374B-4ACB-48BC-A941-AC6A7726B69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22C374B-4ACB-48BC-A941-AC6A7726B69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22C374B-4ACB-48BC-A941-AC6A7726B69F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
